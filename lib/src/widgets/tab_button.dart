@@ -36,8 +36,8 @@ class TabButton extends StatelessWidget {
                   child: Icon(
                     icon,
                     color: selected
-                        ? Theme.of(context).colorScheme.secondary
-                        : Theme.of(context).iconTheme.color,
+                        ? Colors.white
+                        : Colors.white,
                   ),
                 ),
               ),
