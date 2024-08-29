@@ -296,7 +296,7 @@ class JavascriptExecutorBase {
 
   /// Set a default editor text color
   setBaseTextColor(Color? color) async {
-    String? hex = "FFFFFF";
+    String? hex = color!.toHexColorString();;
     await executeJavascript("setBaseTextColor('$hex');");
   }
 
