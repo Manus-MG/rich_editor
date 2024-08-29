@@ -155,7 +155,7 @@ class RichEditorState extends State<RichEditor> {
           .setBackgroundColor(Color(0xFF262626));
     if (widget.editorOptions!.baseTextColor != null)
       await javascriptExecutor
-          .setBaseTextColor(widget.editorOptions!.baseTextColor!);
+          .setBaseTextColor(Color(0xFF000000));
     if (widget.editorOptions!.placeholder != null)
       await javascriptExecutor
           .setPlaceholder(widget.editorOptions!.placeholder!);
