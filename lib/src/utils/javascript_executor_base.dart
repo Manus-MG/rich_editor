@@ -122,13 +122,15 @@ class JavascriptExecutorBase {
 
   /// Set a [Color] for the selected text
   setTextColor(Color? color) async {
-    String? hex = color!.toHexColorString();
+    String? hex= "#FFFFFF";
+    // String? hex = color!.toHexColorString();
     await executeJavascript("setTextColor('$hex');");
   }
 
   /// Set a [Color] for the selected text's background
   setTextBackgroundColor(Color? color) async {
-    String? hex = color!.toHexColorString();
+    String? hex="#d6ecd2";
+    // String? hex = color!.toHexColorString();
     await executeJavascript("setTextBackgroundColor('$hex');");
   }
 
@@ -296,7 +298,8 @@ class JavascriptExecutorBase {
 
   /// Set a default editor text color
   setBaseTextColor(Color? color) async {
-    String? hex = color!.toHexColorString();;
+    // String? hex = color!.toHexColorString();
+    String? hex= "#FFFFFF";
     await executeJavascript("setBaseTextColor('$hex');");
   }
 
