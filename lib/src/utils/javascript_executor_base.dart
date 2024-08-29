@@ -284,8 +284,8 @@ class JavascriptExecutorBase {
 
   /// Set a [Color] for the editor's background
   setBackgroundColor(Color? color) async {
-    String? hex= "262626";
-    // String? hex = color!.toHexColorString();
+    // String? hex= "262626";
+    String? hex = color!.toHexColorString();
     await executeJavascript("setBackgroundColor('$hex');");
   }
 
