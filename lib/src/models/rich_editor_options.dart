@@ -13,7 +13,7 @@ class RichEditorOptions {
 
   RichEditorOptions({
     Color? backgroundColor,
-    Color? baseTextColor,
+    Color? baseTextColor=Color(0xFFFFFFFF),
     EdgeInsets? padding,
     String? placeholder,
     String? baseFontFamily,
