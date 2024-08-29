@@ -150,12 +150,12 @@ class RichEditorState extends State<RichEditor> {
     if (widget.value != null) await javascriptExecutor.setHtml(widget.value!);
     if (widget.editorOptions!.padding != null)
       await javascriptExecutor.setPadding(widget.editorOptions!.padding!);
-    if (widget.editorOptions!.backgroundColor != null)
+      if (widget.editorOptions!.backgroundColor != null)
       await javascriptExecutor
-          .setBackgroundColor(Color(0xFF262626));
+          .setBackgroundColor(widget.editorOptions!.backgroundColor!);
     if (widget.editorOptions!.baseTextColor != null)
       await javascriptExecutor
-          .setBaseTextColor(Color(0xFF000000));
+          .setBaseTextColor(widget.editorOptions!.baseTextColor!);
     if (widget.editorOptions!.placeholder != null)
       await javascriptExecutor
           .setPlaceholder(widget.editorOptions!.placeholder!);
