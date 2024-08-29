@@ -152,7 +152,7 @@ class RichEditorState extends State<RichEditor> {
       await javascriptExecutor.setPadding(widget.editorOptions!.padding!);
     if (widget.editorOptions!.backgroundColor != null)
       await javascriptExecutor
-          .setBackgroundColor(widget.editorOptions!.backgroundColor!);
+          .setBackgroundColor(Color(0xFF262626));
     if (widget.editorOptions!.baseTextColor != null)
       await javascriptExecutor
           .setBaseTextColor(widget.editorOptions!.baseTextColor!);
