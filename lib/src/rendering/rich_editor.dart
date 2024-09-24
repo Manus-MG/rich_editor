@@ -74,13 +74,22 @@ class RichEditorState extends State<RichEditor> {
   }
 
   _loadHtmlFromAssets() async {
-    final filePath = assetPath;
+  final filePath = assetPath;
+  final uri = Uri.tryParse('http://localhost:$port/$filePath');
+
+  if (uri != null) {
+    final webUri = WebUri(uri.toString()); // Adjust this line based on how WebUri is constructed
     _controller!.loadUrl(
       urlRequest: URLRequest(
-        url: Uri.tryParse('http://localhost:$port/$filePath'),
+        url: webUri,
       ),
     );
+  } else {
+    // Handle the error when the Uri is null
+    print('Invalid URI');
   }
+}
+
 
   @override
   Widget build(BuildContext context) {
