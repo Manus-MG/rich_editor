@@ -11,12 +11,12 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_inappwebview: ^6.1.0+1
-  mime: ^1.0.4
+  mime: ^1.0.6
   image_picker: ^0.8.9
-  flutter_widget_from_html_core: ^0.14.7
+  flutter_widget_from_html_core: ^0.15.2
   flutter_colorpicker: ^1.0.3
-  path: ^1.8.2
-  xml2json: ^5.3.6
+  path: ^1.9.0
+  xml2json: ^6.2.4
 
 dev_dependencies:
   flutter_test:
